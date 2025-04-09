@@ -35,7 +35,7 @@ export default function SayItSipItApp() {
 
   const fetchOrder = async (spokenText) => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/parse-order', {
+      const response = await fetch('https://sayitsipit.onrender.com/parse-order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ transcript: spokenText })
